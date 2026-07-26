@@ -14,9 +14,7 @@ export default function Hero() {
                 </p>
                 <div className="hero-actions">
                     <a 
-                        href="#contact" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                        href="#contact"  
                         className="cta-whatsapp"
                     >
                         💬 Chat on WhatsApp to Book
