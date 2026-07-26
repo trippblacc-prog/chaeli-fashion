@@ -1,0 +1,251 @@
+.contact-section {
+    background-color: #0e0e14;
+    padding: 6rem 2rem;
+    width: 100%;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.contact-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3.5rem auto;
+}
+
+.contact-tag {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #d4af37;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.contact-header h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.contact-header p {
+    font-size: 1.05rem;
+    color: #b0b0b5;
+    line-height: 1.5;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info-card, 
+.contact-action-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-info-card:hover, 
+.contact-action-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(212, 175, 55, 0.5);
+}
+
+.contact-info-card h3,
+.contact-action-card h3 {
+    font-size: 1.35rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    padding-bottom: 0.8rem;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.info-label {
+    color: #b0b0b5;
+    font-weight: 500;
+}
+
+.info-value {
+    color: #ffffff;
+    font-weight: 600;
+    text-align: right;
+}
+
+.contact-action-card p {
+    color: #b0b0b5;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.whatsapp-cta-btn {
+    display: inline-block;
+    background-color: #25d366; /* Official WhatsApp green */
+    color: #ffffff;
+    text-align: center;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-cta-btn:hover {
+    background-color: #20ba5a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 4rem 1rem;
+    }
+    .contact-info-card, 
+    .contact-action-card {
+        padding: 1.8rem;
+    }
+}
+
+
+
+/* Interactive Form Enhancements */
+.interactive-form-group {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    padding-top: 1.5rem;
+}
+
+.form-heading {
+    font-size: 1rem;
+    color: #d4af37;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.contact-textarea {
+    width: 100%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    padding: 0.8rem;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+.styles-checkbox-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.style-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #b0b0b5;
+    transition: all 0.2s ease;
+}
+
+.style-checkbox-item:hover {
+    border-color: rgba(212, 175, 55, 0.4);
+    color: #ffffff;
+}
+
+.style-checkbox-item.active {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: #d4af37;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.style-checkbox-item input {
+    accent-color: #d4af37;
+    cursor: pointer;
+}
+
+.order-summary-box {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px dashed rgba(212, 175, 55, 0.3);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #d4af37;
+}
+
+.order-summary-box strong {
+    color: #ffffff;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact-section {
+        padding: 6rem 3rem;
+    }
+    .contact-tag {
+        font-size: 1.2rem;
+    }
+    .contact-header h2 {
+        font-size: 2.8rem;
+    }
+    .contact-header p {
+        font-size: 1.35rem;
+    }
+    .contact-info-card h3, 
+    .contact-action-card h3 {
+        font-size: 1.8rem;
+    }
+    .info-item {
+        font-size: 1.25rem;
+        padding: 0.5rem 0;
+    }
+    .form-heading {
+        font-size: 1.35rem;
+    }
+    .contact-textarea {
+        font-size: 1.2rem;
+        padding: 1.2rem;
+    }
+    .style-checkbox-item span {
+        font-size: 1.15rem;
+    }
+}

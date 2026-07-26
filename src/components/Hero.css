@@ -1,0 +1,129 @@
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Clean, valid shorthand: image url | position | / size | repeat */
+    background: url('../assets/hero-bg.png') center center / cover no-repeat;
+    padding: 6rem 2rem;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 15, 0.65);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero-tag {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #d4af37;
+    font-weight: 600;
+}
+
+.hero-section h1 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1.05rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0;
+}
+
+.cta-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #25D366;
+    color: #ffffff;
+    padding: 0.9rem 1.8rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.cta-whatsapp:hover {
+    background-color: #20ba5a;
+    transform: scale(1.05);
+}
+
+/* Mobile & Tablet Optimizations */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 75vh;
+        padding: 4rem 1rem;
+    }
+
+    .hero-content {
+        gap: 1rem;
+    }
+
+    .hero-section p {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
+    }
+
+    .cta-whatsapp {
+        width: 100%;
+        justify-content: center;
+        padding: 0.9rem 1.2rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero-section {
+        min-height: 100vh;
+        padding: 5rem 2.5rem;
+    }
+
+    .hero-section h1 {
+        font-size: 3.8rem; /* Boosts heading size so it commands attention on tablets */
+    }
+
+    .hero-section p {
+        font-size: 1.95rem; /* Makes the description text comfortably readable */
+        max-width: 700px;
+    }
+
+    .hero-tag{
+        font-size: 2.15rem;
+    }
+
+    .cta-whatsapp {
+        width: 100%;
+        justify-content: center;
+        padding: 1.9rem 3.9rem;
+        font-size: 1.9rem;
+    }
+}

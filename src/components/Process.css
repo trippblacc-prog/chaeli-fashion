@@ -1,0 +1,144 @@
+.process-section {
+    background-color: #0e0e14;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.process-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 800px;
+}
+
+.process-tag {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #d4af37;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.process-header h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: #ffffff;
+    margin: 0;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.process-step {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 12px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.6);
+}
+
+/* Icon Styling & Gold Color Match */
+.step-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+    filter: brightness(0) saturate(100%) invert(79%) sepia(33%) saturate(589%) hue-rotate(3deg) brightness(93%) contrast(88%);
+}
+
+/*.step-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #d4af37;
+    display: block;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}*/
+
+.process-step h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.process-step p {
+    font-size: 1rem;
+    color: #b0b0b5;
+    line-height: 1.6;
+}
+
+/* Tablet Optimizations */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .process-section {
+        padding: 5rem 2.5rem;
+    }
+    
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .process-step {
+        padding: 3rem 2rem;
+    }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .process-section {
+        padding: 4rem 1rem;
+    }
+    
+    .process-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .process-header {
+        margin-bottom: 2.5rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .process-section {
+        padding: 5rem 2.5rem;
+    }
+    .process-tag {
+        font-size: 1.2rem;
+    }
+    .process-header h2 {
+        font-size: 2.8rem;
+    }
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .process-step {
+        padding: 3rem 2rem;
+    }
+    .process-step h3 {
+        font-size: 1.6rem;
+    }
+    .process-step p {
+        font-size: 1.25rem;
+        line-height: 1.7;
+    }
+    .step-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
