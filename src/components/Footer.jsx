@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="footer-section">
             <div className="footer-content">
                 <div className="footer-brand">
-                    <h3>Chaeli's Fashion</h3>
+                    <h3>Cheali's Fashion</h3>
                     <p>Bespoke tailoring and luxury custom wear crafted with precision in Lagos, Nigeria.</p>
                 </div>
 
