@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
 
             <div className="footer-bottom">
-                <p>&copy; 2026 Chaeli's Fashion. All rights reserved. Directed by Racheal Ayodeji.</p>
+                <p>&copy; 2026 Cheali's Fashion. All rights reserved. Directed by Racheal Ayodeji.</p>
             </div>
         </footer>
     );

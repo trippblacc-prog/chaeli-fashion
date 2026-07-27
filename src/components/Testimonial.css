@@ -165,3 +165,41 @@
         word-break: break-word;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .testimonials-section {
+        padding: 6rem 0;
+    }
+    .testimonials-tag {
+        font-size: 1.2rem;
+    }
+    .testimonials-header h2 {
+        font-size: 2.8rem;
+    }
+    .testimonials-header p {
+        font-size: 1.35rem;
+    }
+    .testimonials-track {
+        padding-left: calc((100vw - 520px) / 2);
+        padding-right: calc((100vw - 520px) / 2);
+    }
+    .testimonial-card {
+        width: 520px;
+        max-width: 520px;
+        padding: 2.5rem;
+    }
+    .testimonial-avatar {
+        width: 110px;
+        height: 110px;
+    }
+    .testimonial-quote {
+        font-size: 1.25rem;
+        line-height: 1.6;
+    }
+    .testimonial-name {
+        font-size: 1.4rem;
+    }
+    .testimonial-role {
+        font-size: 1.05rem;
+    }
+}
